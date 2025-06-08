@@ -1,0 +1,61 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Style -->
+    <style>
+        .box { fill: lightblue; stroke: black; stroke-width: 2; }
+        .text { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+        .arrow { stroke: black; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="7" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+        </marker>
+    </defs>
+
+    <!-- Boxes -->
+    <rect x="20" y="50" width="150" height="50" class="box"/>
+    <text x="95" y="80" class="text">Zeitdiskretes Sprachsignal</text>
+
+    <rect x="200" y="50" width="100" height="50" class="box"/>
+    <text x="250" y="80" class="text">Fenster</text>
+
+    <rect x="350" y="50" width="80" height="50" class="box"/>
+    <text x="390" y="80" class="text">DFT</text>
+
+    <rect x="470" y="50" width="120" height="50" class="box"/>
+    <text x="530" y="80" class="text">Spektrum</text>
+
+    <rect x="620" y="50" width="100" height="50" class="box"/>
+    <text x="670" y="80" class="text">Log</text>
+
+    <!-- Arrows -->
+    <line x1="170" y1="75" x2="200" y2="75" class="arrow"/>
+    <line x1="300" y1="75" x2="350" y2="75" class="arrow"/>
+    <line x1="430" y1="75" x2="470" y2="75" class="arrow"/>
+    <line x1="590" y1="75" x2="620" y2="75" class="arrow"/>
+
+    <!-- Lower path -->
+    <line x1="670" y1="100" x2="670" y2="150" class="arrow"/>
+    
+    <rect x="620" y="160" width="100" height="50" class="box"/>
+    <text x="670" y="190" class="text">Log Spektrum</text>
+
+    <rect x="470" y="160" width="120" height="50" class="box"/>
+    <text x="530" y="190" class="text">IDFT</text>
+
+    <rect x="350" y="160" width="80" height="50" class="box"/>
+    <text x="390" y="190" class="text">Cepstrum</text>
+
+    <rect x="200" y="160" width="120" height="50" class="box"/>
+    <text x="260" y="190" class="text">Cepstrum Fenster</text>
+
+    <rect x="20" y="160" width="150" height="50" class="box"/>
+    <text x="95" y="190" class="text">Geliefertes Cepstrum</text>
+
+    <!-- Lower arrows -->
+    <line x1="620" y1="185" x2="590" y2="185" class="arrow"/>
+    <line x1="470" y1="185" x2="430" y2="185" class="arrow"/>
+    <line x1="350" y1="185" x2="320" y2="185" class="arrow"/>
+    <line x1="200" y1="185" x2="170" y2="185" class="arrow"/>
+</svg>
